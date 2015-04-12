@@ -30,7 +30,7 @@ namespace Mosa.VisualStudio.Package
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]
     [Guid(Guids.ProjectPackage)]
 	[DefaultRegistryRoot(@"HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\12.0exp_config")]
-	[ProvideProjectFactory(typeof(Project.MosaProjectFactory), "Mosa Project", "Mosa Project Files (*.wcproj);*.wcproj", "wcproj", "wcproj", @"..\..\Templates\Projects\WitchCraft", LanguageVsTemplate = "Mosa", NewProjectRequireNewFolderVsTemplate = false)]
+	[ProvideProjectFactory(typeof(Project.MosaProjectFactory), "Mosa Project", "Mosa Project Files (*.mosaproj);*.mosaproj", "mosaproj", "mosaproj", @"..\..\Templates\Projects\Mosa Project", LanguageVsTemplate = "Mosa", NewProjectRequireNewFolderVsTemplate = false)]
     public sealed class MosaPackage : ProjectPackage
     {
         private System.Diagnostics.TraceListener _listener;

@@ -246,6 +246,9 @@
     <None Include="Templates\Projects\Mosa Project\Kernel.cs">
       <SubType>Code</SubType>
     </None>
+    <Content Include="Templates\Mosa.CSharp.Targets">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MPF\VisualStudio.Project.resx">
@@ -268,7 +271,9 @@
     <None Include="MPF\Diagrams\HierarchyClasses.cd" />
     <None Include="MPF\Diagrams\PropertiesClasses.cd" />
     <None Include="MPF\Diagrams\ReferenceClasses.cd" />
-    <None Include="Regme.bat" />
+    <Content Include="Regme.bat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
